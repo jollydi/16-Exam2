@@ -244,7 +244,7 @@ def problem4b(list_of_tuples_of_strings):
       problem4b( [('SixSix', 'I am nine', 'This', 'is definitely fun!'),
                   ('Nope', 'even', 'not prime'),
                   ('', 'This is eighteen!', '1234567890'),
-                  ('none', 'here')] )
+                  ('none', 'here')] ).
          returns  False
          because the lengths of the strings are
             6, 9, 4, 18, 4, 4, 9, 0, 18, and 10, respectively,

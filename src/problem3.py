@@ -63,7 +63,6 @@ class Person(object):
         """
         # TODO: Implement and test this method.
 
-
         print('Happy birthday!')
 
     def celebrate_birthdays(self, n):

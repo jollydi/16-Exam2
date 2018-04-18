@@ -29,8 +29,6 @@ def main():
     # Test get_age:
     p1 = Person(9)
     print(p1.get_age())  # Should print 9
-    p2 = p1.older_person()
-    print(p2.get_age())
 
     # -------------------------------------------------------------------------
     # WRITE MORE CODE HERE AS NEEDED to TEST the code that you write
@@ -38,6 +36,15 @@ def main():
     #   the  Person  class, NOT on the quality or quantity of these tests
     #   that you write here. So KEEP IT SIMPLE here in main.
     # -------------------------------------------------------------------------
+
+    p2 = p1.older_person()
+    print(p2.get_age())
+
+    p2.celebrate_birthday()
+    print(p2.get_age())
+
+    p1.celebrate_birthdays(82)
+    print(p1.get_age())
 
 
 class Person(object):
@@ -61,8 +68,9 @@ class Person(object):
         Increments this Person's age.
         ALso prints 'Happy birthday!'.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
 
+        self.age = self.age + 1
         print('Happy birthday!')
 
     def celebrate_birthdays(self, n):

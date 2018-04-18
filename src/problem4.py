@@ -254,7 +254,7 @@ def problem4b(list_of_tuples_of_strings):
       :type [str]
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #          Tests have been written for you (above).
     #    *** IMPORTANT:  THIS PROBLEM COUNTS ONLY 2 POINTS
     #                    AND HAS AN ELEGANT SOLUTION.  DO NOT GET STUCK ON IT!
@@ -264,6 +264,7 @@ def problem4b(list_of_tuples_of_strings):
         for l in range(len(list_of_tuples_of_strings[k])):
             if is_prime(len(list_of_tuples_of_strings[k][l])) is True:
                 return True
+    return False
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
